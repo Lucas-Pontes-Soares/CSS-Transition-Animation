@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 6</title>
+    <style>
+        .ball {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            background-color: red;
+            position: relative;
+
+            animation-name: example-two;
+            animation-duration: 3s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+
+        @keyframes example-one{
+            from{
+                background-color: rgb(51, 172, 202);
+            }
+
+            to {
+                background-color: rgb(192, 34, 108);
+            }
+        }
+
+        @keyframes example-two{
+            0% {
+                background-color: blueviolet;
+                left: 0;
+                top: 0;
+            }
+
+            25% {
+                background-color: green;
+                left: 600px;
+                top: 0;
+            }
+
+            50% {
+                background-color: blue;
+                left: 600px;
+                top: 600px;
+            }
+
+            75% {
+                background-color: yellow;
+                left: 0px;
+                top: 600px;
+            }
+
+            100% {
+                backgroud-color: red;
+                left: 0;
+                top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ball"></div>
+</body>
+</html>
